@@ -1,0 +1,278 @@
+.ms-hero-bg-dark-light {
+  position: relative;
+  color: #fff;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+h4 {
+  font-size: 18px;
+}
+hr {
+  display: block;
+  border-top: 1px solid #ddd;
+  margin: 25px 0;
+}
+.ms-bg-fixed {
+  background-attachment: fixed;
+}
+.ms-hero-img-city2 {
+  background-image: url(../../images/skyline2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.ms-hero-page {
+  margin: -40px 0 0;
+  padding: 40px 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.ms-hero-bg-dark-light:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.95);
+  z-index: 0;
+}
+.color-info {
+  color: #00bcd4 !important;
+}
+h1 {
+  margin: 20px 0 15px;
+}
+
+.ms-icon.ms-icon-white.ms-icon-inverse {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.ms-icon.ms-icon-inverse {
+  border: solid 1px #9c27b0;
+}
+.ms-icon.ms-icon-lg {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+}
+.ms-icon {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  text-align: center;
+}
+.ms-icon-feature .ms-icon-feature-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 20px;
+}
+.ms-hero-bg-dark-light .container {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.bg-info {
+  background-color: #00bcd4 !important;
+  color: #fff;
+}
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+.ms-hero-bg-dark {
+  position: relative;
+}
+.ms-hero-img-keyboard {
+  background-image: url(../../images/keyboard.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.ms-hero-page {
+  margin: -40px 0 0;
+  padding: 40px 0;
+}
+.btn.btn-xlg {
+  padding: 10px 40px;
+  font-size: 16px;
+}
+.btn.btn-raised.btn-primary,
+.btn.btn-fab.btn-primary,
+.btn-group-raised .btn.btn-primary,
+.input-group-btn .btn.btn-raised.btn-primary,
+.input-group-btn .btn.btn-fab.btn-primary,
+.btn-group-raised .input-group-btn .btn.btn-primary {
+  background-color: #9c27b0;
+  /* color: rgba(255, 255, 255, .84); */
+  border: 0;
+}
+.ms-hero-bg-dark:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.85);
+  z-index: 0;
+}
+.ms-hero-bg-info {
+  position: relative;
+}
+.ms-hero-bg-info:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 75, 85, 0.85);
+  z-index: 0;
+}
+.ms-bg-fixed {
+  background-attachment: fixed;
+}
+.ms-hero-img-meeting {
+  background-image: url(../../images/meeting.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.wrap {
+  padding: 60px 0;
+  padding: 6rem 0;
+}
+.color-white {
+  color: #fff !important;
+}
+
+.wrap {
+  padding: 60px 0;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+.ms-list-arrow {
+  list-style-type: none;
+  padding: 0;
+}
+.ms-list-arrow li:before {
+  font-family: Material-Design-Iconic-Font;
+  content: "\f301";
+  background-color: #9c27b0;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-left: -55px;
+  vertical-align: middle;
+}
+.index-1 {
+  position: relative;
+  z-index: 1 !important;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ms-list-arrow li {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding-left: 55px;
+}
+
+.btn {
+  position: relative;
+  padding: 8px 30px;
+  margin: 10px 1px;
+  font-size: 14px;
+}
+.button-pack{
+    position: relative;
+    padding: 8px 30px;
+    margin: 10px 1px;
+    font-size: 14px;
+    background-color:#00BCD4;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+}
+.color-royal {
+  color: #9c27b0 !important;
+}
+.btns {
+  border: none;
+  border-radius: 2px;
+  position: relative;
+  padding: 8px 30px;
+  margin: 10px 1px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+}
+.btns-green {
+  border: none;
+  border-radius: 2px;
+  position: relative;
+  padding: 8px 30px;
+  margin: 10px 1px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  color: rgb(19, 116, 19);
+}
+.mt-6{
+    margin-top: 3rem;
+}

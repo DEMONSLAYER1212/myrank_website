@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>MyRank - Online Education Portal</title>
+    <meta name="description"
+        content="MyRank is an online self assessment portal which gives support to students for preparing state & national level entrance examinations like IITJEE, BITSAT, EAMCET, KEAM, and AIIMS.">
+    <meta name="keywords"
+        content="MyRank,Online Education,Mock Test, India,Unlimited Practice Test,Live Classes,IPE Question Bank,Ask your Queries,clarifications,intermediate,Jee Mains,Jee Advanced,BITSAT,EAMCET,AIIMS,JIPMER,NEET,K CET,KEAM ">
+    <meta name="author" content="Bhanu Satapati">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+</head>
+
+<body>
+    <div class="ms-site-container">
+        <!-- Header -->
+        <header class="ms-header ms-header-white">
+            <!--ms-header-white-->
+            <div class="container container-full">
+                <div class="ms-title">
+                    <a href="#">
+                        <img src="/images/myrank_svg-logo.svg" width="200vw">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <a href="login.php"
+                        class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8 font-weight-bold mr-1"
+                        style="font-family: Cambria, Georgia, serif;">Login</a>
+                    <a href="packages.php"
+                        class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8 font-weight-bold"
+                        style="font-family: Cambria, Georgia, serif;">Register</a>
+                    <a href="javascript:void(0)" class="no-focus animated zoomInDown animation-delay-9 ml-2"
+                        style="font-family: Cambria, Georgia, serif;"><i class="zmdi zmdi-phone"></i> 040-49521580 / 81
+                        / 82 <span class="no-sm-diplay">(9.30 AM TO 5.30 PM)</span> </a> <!-- <form class="search-form animated zoomInDown animation-delay-9">
+              <input id="search-box" type="text" class="search-input" value="040-49521580" name="q" readonly/>
+              <label for="search-box"><i class="zmdi zmdi-phone"></i></label>
+            </form> -->
+                    <a href="javascript:void(0)"
+                        class="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10"><i
+                            class="zmdi zmdi-menu"></i></a>
+                </div>
+            </div>
+        </header>
+        <style>
+            @media (max-width: 976px) {
+                .no-sm-diplay {
+                    display: none !important;
+                }
+            }
+        </style> <!-- Navbar -->
+        <nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-white mb-0">
+            <div class="container container-full tab-pml-0">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="myrank_svg-logo.svg" width="150vw">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="ms-navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link animated fadeIn animation-delay-9 nav-link-pl"
+                                role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home ml-0"
+                                    aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-megamenu-container">
+                            <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-9 nav-link-pl"
+                                data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" data-name="component"><i class="fa fa-hand-o-right ml-0"
+                                    aria-hidden="true"></i> Guidance <i class="zmdi zmdi-chevron-down"></i></a>
+                            <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
+                                <li class="container">
+                                    <div class="row">
+                                        <div class="col-sm-3 megamenu-col">
+                                            <div class="megamenu-block animated fadeInLeft animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="fa fa-microchip"></i> MPC</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="jeemains.php"><i
+                                                                class="fa fa-flag-o"></i> JEE MAINS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="jeeadvanced.php"><i
+                                                                class="fa fa-flag"></i> JEE ADVANCED</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="bitsat.php"><i
+                                                                class="fa fa-building-o"></i> BITSAT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="tseamcet.php"><i
+                                                                class="fa fa-building-o"></i> TS EAMCET</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="apeamcet.php"><i
+                                                                class="fa fa-building-o"></i> AP EAPCET</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="kcet.php">
+                                                            <i class="fa fa-building-o"></i> KCET
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="iiithyd.php"><i
+                                                                class="fa fa-building-o"></i> IIIT HYDERABAD</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="iisc.php"><i class="fa fa-tags"></i>
+                                                            IISc</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="iiser.php"><i
+                                                                class="fa fa-tags"></i> IISER</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="nest.php"><i class="fa fa-tags"></i>
+                                                            NEST</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php"><i
+                                                                class="fa fa-building-o"></i> Deemed Universities</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 megamenu-col">
+                                            <div class="megamenu-block animated fadeInLeft animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="fa fa-plus-square"></i> BiPC/PCB</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="neet.php">
+                                                            <i class="fa fa-user-md"></i> NEET</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="withripple" href="aiims.php">
+                                                            <i class="fa fa-medkit"></i> AIIMS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="jipmer.php">
+                                                            <i class="fa fa-leaf"></i> JIPMER</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="tseamcet.php">
+                                                            <i class="fa fa-leaf"></i> TS EAMCET</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="apeamcet.php">
+                                                            <i class="fa fa-leaf"></i> AP EAPCET</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="kcet.php">
+                                                            <i class="fa fa-leaf"></i> KCET</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="icar.php">
+                                                            <i class="fa fa-leaf"></i> ICAR</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="iiser.php">
+                                                            <i class="fa fa-tags"></i> IISER</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="aipvt.php">
+                                                            <i class="fa fa-stethoscope"></i> AIPVT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="tnau.php">
+                                                            <i class="fa fa-leaf"></i> TNAU</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-leaf"></i> Deemed Universities</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 megamenu-col">
+                                            <div class="megamenu-block animated fadeInRight animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="fa fa-user-md"></i> NEET PG</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> AIQ/Deemed</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> TS Convenor Quota</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> AP Convenor Quota</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> TS MGMT Quota</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> AP MGMT Quota</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> Karnataka Counselling</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-user-md"></i> Other States Counsellings</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="megamenu-block animated fadeInRight animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="zmdi zmdi-tab"></i> NEET MDS</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-h-square"></i> AIQ/Deemed</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-h-square"></i> AP & TS Counsellings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-h-square"></i> Karnataka Counselling</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 megamenu-col">
+                                            <div class="megamenu-block animated fadeInRight animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="fa fa-info-circle"></i> Other UG Guidance</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="nift.php">
+                                                            <i class="fa fa-female"></i> NIFT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="uceed.php">
+                                                            <i class="fa fa-female"></i> UCEED</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="clat.php">
+                                                            <i class="fa fa fa-legal"></i> CLAT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="nata.php">
+                                                            <i class="fa fa-building-o"></i> NATA</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="isi.php">
+                                                            <i class="fa fa-pie-chart"></i> ISI</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="megamenu-block animated fadeInRight animated-2x">
+                                                <h3 class="megamenu-block-title font-weight-bold"><i
+                                                        class="fa fa-info-circle"></i> Others</h3>
+                                                <ul class="megamenu-block-list">
+                                                    <li>
+                                                        <a class="withripple" href="usmle.php">
+                                                            <i class="fa fa-user-md"></i> USMLE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="ntse.php">
+                                                            <i class="zmdi fa-graduation-cap"></i> NTSE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-leaf"></i> MSc Agriculture</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-graduation-cap"></i> GATE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="withripple" href="coming_soon.php">
+                                                            <i class="fa fa-plane"></i> GRE</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/LiveClasses.html"
+                                class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                                role="button" aria-haspopup="true" aria-expanded="false"><i
+                                    class="fa fa-television ml-0" aria-hidden="true"></i> Live Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Mbbs.html"
+                                class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                                role="button" aria-haspopup="true" aria-expanded="false"><i
+                                    class="fa fa-television ml-0" aria-hidden="true"></i> MBBS Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Packages.html" class="nav-link animated fadeIn animation-delay-9 nav-link-pl"
+                                role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-empire ml-0"
+                                    aria-hidden="true"></i> Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ContactUs.html"
+                                class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                                role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-phone ml-0"
+                                    aria-hidden="true"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://myrank.co.in/notifications/"
+                                class="nav-link animated fadeIn animation-delay-9 nav-link-pl" role="button"
+                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-list ml-0"
+                                    aria-hidden="true"></i> Notifications</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.php"
+                    class="mobile-login btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-2"
+                    id="mobile-login" style="font-family: Cambria, Georgia, serif;">Login</a>
+                <a href="packages.php"
+                    class="mobile-register btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-2 mr-auto"
+                    id="mobile-register" style="font-family: Cambria, Georgia, serif;">Register</a>
+                <a href="javascript:void(0)" class="mobile-menu ms-toggle-left btn-navbar-menu"><i
+                        class="zmdi zmdi-menu"></i></a>
+            </div> <!-- container -->
+        </nav>
+        <style>
+            .mobile-login,
+            .mobile-register,
+            .mobile-menu {
+                display: none !important;
+            }
+
+            @media (max-width: 767px) {
+
+                .mobile-login,
+                .mobile-register,
+                .mobile-menu {
+                    display: block !important;
+                }
+            }
+        </style>
+        <!-- Slider -->
+
+        <header class="wrap wrap-mountain mb-5 p-0">
+            <div id="carousel-header" class="carousel carousel-header slide" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-header" data-slide-to="1"></li>
+                    <li data-target="#carousel-header" data-slide-to="2"></li>
+                    <li data-target="#carousel-header" data-slide-to="3"></li>
+                    <li data-target="#carousel-header" data-slide-to="4"></li>
+                    <li data-target="#carousel-header" data-slide-to="5"></li>
+                    <li data-target="#carousel-header" data-slide-to="6"></li>
+                    <li data-target="#carousel-header" data-slide-to="7"></li>
+                    <li data-target="#carousel-header" data-slide-to="8"></li>
+                    <li data-target="#carousel-header" data-slide-to="9"></li>
+                    <li data-target="#carousel-header" data-slide-to="10"></li>
+                    <li data-target="#carousel-header" data-slide-to="11"></li>
+                    <li data-target="#carousel-header" data-slide-to="12"></li>
+                    <li data-target="#carousel-header" data-slide-to="13"></li>
+                    <li data-target="#carousel-header" data-slide-to="14"></li>
+                    <li data-target="#carousel-header" data-slide-to="15"></li>
+                    <li data-target="#carousel-header" data-slide-to="16"></li>
+                    <li data-target="#carousel-header" data-slide-to="17"></li>
+                    <li data-target="#carousel-header" data-slide-to="18"></li>
+                    <li data-target="#carousel-header" data-slide-to="19"></li>
+                    <li data-target="#carousel-header" data-slide-to="20"></li>
+                    <li data-target="#carousel-header" data-slide-to="21"></li>
+                    <li data-target="#carousel-header" data-slide-to="22"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!--	<div class="carousel-item active">
+              <div class="container">
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<a href="https://www.arenaone.in/mock/neetpg" target="_blank"><img src="./images/index/Sakshi-MyRank NEET PG 2024.jpg" alt="..." class="img-fluid mt-2 animated zoomIn animation-delay-5"><a/>
+					</div>
+				</div>
+              </div>
+            </div>	-->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023-UG-S1.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S2.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S3.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S4.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S5.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S6.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S7.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S8.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S9.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 UG S10.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 MPC S1.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 MPC S2.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S1.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S2.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S3.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S4.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S5.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S6.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S7.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S8.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S9.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/2023 PG S10.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <img src="/images/corousel/OET.jpg" alt="..."
+                                        class="img-fluid mt-2 animated zoomIn animation-delay-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a href="#carousel-header"
+                    class="btn-circle btn-circle-xs btn-circle-raised btn-circle-primary left carousel-control"
+                    role="button" data-slide="prev"><i class="zmdi zmdi-chevron-left"></i></a>
+                <a href="#carousel-header"
+                    class="btn-circle btn-circle-xs btn-circle-raised btn-circle-primary right carousel-control"
+                    role="button" data-slide="next"><i class="zmdi zmdi-chevron-right"></i></a>
+            </div>
+        </header>
+    <div class="container">
+            <!-- Our Services -->
+        <div class="mt-6">
+            <h2 class="text-center title-color-blue mb-2 wow fadeInDown animation-delay-4">E-Services</h2>
+            <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">MyRank is a self assesment portal providing E-Learning / E-Guidance to students aspiring to reach new heights in their educational goals. We Provide Assistance for the following courses.</p>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-info wow zoomInUp animation-delay-5">
+                  <div class="bg-info">
+                    <img src="./images/home/e_services/mpc.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-info">MPC/PCM</h4>
+                    <p>India is one of the leading countries in the fields of Engineering, Architecture, Research &amp; Defence. ISRO success story is one of the key highlights of this decade. The foundation of this is laid at +2 level (MPC/PCM).</p>
+                    <a href="mpc.php" class="btn btn-info"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-danger wow zoomInUp animation-delay-6">
+                  <div class="bg-danger">
+                    <img src="./images/home/e_services/bipc.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-danger">BiPC/PCB</h4>
+                    <p>India is rated among the TOP 5 countries in the world in the field of Medical, Dental, Veterinary &amp; Research and it has been guiding other countries in the field of AYUSH. All this starts at +2 level (BiPC/PCB).</p>
+                    <a href="bipc.php" class="btn btn-danger"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-warning wow zoomInUp animation-delay-7">
+                  <div class="bg-warning">
+                    <img src="./images/home/e_services/ntse.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-warning">NTSE</h4>
+                    <p>Engineers, Doctors, Scientists, Research Scholars, Civil Servants, Architects have one thing in 'COMMON'. Most of them are NTSE scholars. NTSE exam is the Turning Point for Secondary Student (10th Class).</p>
+                    <a href="ntse_services.php" class="btn btn-warning"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-success wow zoomInUp animation-delay-8">
+                  <div class="bg-success">
+                    <img src="./images/home/e_services/liveclasses.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-success">Live Classes</h4>
+                    <p>Live Classes is the need of the hour. Student can attend classes from the comfort of their homes and utilise the saved time on pursuing their hobbies. Getting access to the best teachers in the country is just a "CLICK" away. The Greatest obstacle to your success is self-doubt. This is the platform where all your doubts rest in peace "RIP".  </p>
+                    <a href="javascript:void(0)" class="btn btn-success"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-primary wow zoomInUp animation-delay-5">
+                  <div class="bg-primary">
+                    <img src="./images/home/e_services/bank.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-primary">Bank PO</h4>
+                    <p>Banking in India can be traced back to Ancient India where the Vedas text was called "Usury". After Independence, the Banking Sector is regulated by RBI. As the Indian Economy grew the Banks where Nationalised in the year 1969 and 1980. The banking sector is the backbone of the Indian economy and a job-creating Machine.</p>
+                    <a href="bank.php" class="btn btn-primary"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-lightblue wow zoomInUp animation-delay-6">
+                  <div class="bg-lightblue">
+                    <img src="./images/home/e_services/gre.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-lightblue">GRE</h4>
+                    <p>GRE® is the most widely accepted graduate admission test. Top Universities & Business schools all around the world are considering GRE® scores as a part of their admission process for MBA, specialized masters and other graduate business programs. Life has no limitations except the ones you make.GRE® is an Exception.
+                        </p>
+                    <a href="javascript:void(0)" class="btn btn-lightblue"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-darkred wow zoomInUp animation-delay-7">
+                  <div class="bg-darkred">
+                    <img src="./images/home/e_services/gate.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-darkred">GATE</h4>
+                    <p>The GATE exam is a gateway which not only to find out excellent minds in the field of Engineering, but also aims to pick up the best candidates whose expertise can be utilized in various sectors. A Valid GATE Score is a must for aspirants application for the vacancy. GATE is the only Qualifying Exam for PSU.</p>
+                    <a href="javascript:void(0)" class="btn btn-darkred"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card card-dark wow zoomInUp animation-delay-8">
+                  <div class="bg-dark">
+                    <img src="./images/home/e_services/agriculture.jpg" alt="..." class="img-avatar-circle">
+                  </div>
+                  <div class="card-body pt-4 text-center">
+                    <h4 class="color-dark">MSc Agri</h4>
+                    <p>Agriculture in India has a long history dating back to 10,000 year. Today India Ranks Second worldwide in FARM OUTPUT and employs 52% of the total work force and is still the largest economic sector and plays a Significant Role in the overall Socio-economic development of India.</p>
+                    <a href="javascript:void(0)" class="btn btn-dark"><i class="zmdi zmdi-star"></i> Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>	  
+         </div> <!-- container -->
+        <!-- Our Features -->
+        <div class="wrap bg-warning mt-6">
+            <div class="text-center color-white mb-6 wow fadeInDown animation-delay-4">
+                <h1>E-Services Features</h1>
+            </div>
+            <div class="container bg-light color-dark custom-container">
+                <h3 class="color-warning right-line pt-2 pb-2 wow fadeInDown animation-delay-4">Academic Understanding
+                </h3>
+                <div class="panel panel-light panel-flat">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-4"
+                        role="tablist">
+
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_synopsis" aria-controls="feature_synopsis" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple active"><i class="fa fa-leanpub"></i> <span
+                                    class="d-none d-md-inline">Synopsis</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#feature_rc"
+                                aria-controls="rc" role="tab" data-toggle="tab" class="nav-link withoutripple"><i
+                                    class="fa fa-desktop"></i> <span class="d-none d-md-inline">Video Classes</span></a>
+                        </li>
+                        <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a href="#feature_ayq"
+                                aria-controls="feature_ayq" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-question"></i> <span
+                                    class="d-none d-md-inline">Ask Your Query</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_tips" aria-controls="feature_tips" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-certificate"></i> 
+                                <span
+                                    class="d-none d-md-inline">Tips &amp; Tricks</span></a></li>
+                   <span id="i1" class="ms-tabs-indicator" style="left: 0px;width: 25%;"></span>
+                </ul>
+                    <div class="panel-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content mt-4">
+                            <div role="tabpanel" class="tab-pane active show fade" id="feature_synopsis">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="images/synopsis.jpg" alt=""
+                                            class="img-fluid wow animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal wow animated fadeInUp animation-delay-4">Synopsis</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">A Brief Summary that
+                                            gives student an idea of what a composition is about.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">It provides an
+                                            overview of the Chapter or Main Points and other Important Topics of the
+                                            Chapter.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-8">It is a Quick recap
+                                            of the topic which gives you an Edge while Revision. It is a "2 minutes
+                                            maggi noodles" before the exam.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_rc">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/videoclasses.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Video Classes</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Video classes is the
+                                            way forward.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">Research shows that
+                                            on Average, Students retain 25-60% more material when attends classes online
+                                            compared to only 8 to 10% in a class room. During classes they can learn at
+                                            their own pace, going back and re-reading, skipping (or) accelerating
+                                            through concepts as they choose.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-8">So faster your Seat
+                                            belts and relax and enjoy the video classes from the comfort of your house.
+                                        </p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_ayq">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/demo/doubtsclarify.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Ask Your Query</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Ask your subject
+                                            doubts and get reply with in 24 hours.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">Your quries will be
+                                            calrified by Highly qualified faculty.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_tips">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/tips.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Tips &amp; Tricks
+                                        </h3>
+                                        <p class="lead lead-md  animated fadeInUp animation-delay-6">Tips and Tricks for
+                                            better concept clarity</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">Chapter wise
+                                            synopsis for last minute preparation.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- panel1 -->
+                <h3 class="color-warning right-line pt-2 pb-2 wow fadeInDown animation-delay-4">Practical Application
+                </h3>
+                <div class="panel panel-light panel-flat">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-4"
+                        role="tablist">
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#feature_pt"
+                                aria-controls="feature_pt" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple active"><i class="fa fa-file-text-o"></i> <span
+                                    class="d-none d-md-inline">Chapterwise Practice Questions</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#feature_gt"
+                                aria-controls="feature_gt" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-newspaper-o"></i> <span
+                                    class="d-none d-md-inline">Grand Tests</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_previus_papers" aria-controls="feature_previus_papers" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-database"></i> <span
+                                    class="d-none d-md-inline">Previous Papers</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a
+                                href="#feature_analysis" aria-controls="feature_analysis" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-compass"></i> <span
+                                    class="d-none d-md-inline">Analysis</span></a></li>
+                                    <span id="i1" class="ms-tabs-indicator" style="left: 0px;width: 25%;"></span>
+                    </ul>
+                    <div class="panel-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content mt-4">
+                            <div role="tabpanel" class="tab-pane active show fade" id="feature_pt">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="images/pts.png" alt=""
+                                            class="img-fluid wow animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal wow animated fadeInUp animation-delay-4">Chapter Wise
+                                            Practice Questions</h3>
+                                        <p class="lead lead-md  wow animated fadeInUp animation-delay-6">To get an idea
+                                            of which topics you have not mastered and encourage you to focus future
+                                            learning on week areas.</p>
+                                        <p class="lead lead-md wow animated fadeInUp animation-delay-7">To give you a
+                                            good understanding of your endurance.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_gt">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/gts.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Grand Tests</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Trail exam that you
+                                            can take before appearing for the final exam. So that you can understand the
+                                            level and relevancy of your preparation. </p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">To revise the entire
+                                            syllabus in the stimulated setting of the actual exam. Helps you to asses
+                                            your own preparation.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-8">You can take same
+                                            test number of times and also you can review the analysis of the taken test.
+                                            Through these tests you can review your performance improvement.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_previus_papers">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/demo/mocktest.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Previous Papers</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Helps to determine
+                                            the weightage of each and every topic that carries.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">To get an idea of
+                                            how questions are framed from various topocs.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-8">To know which topics
+                                            you can leave out and which topics are more important.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_analysis">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/analysis.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Exam Analysis</h3>
+                                        <p class="lead lead-md  animated fadeInUp animation-delay-6">Key component of
+                                            effective preparation</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">Helps to know which
+                                            chapters should be prior while preparing for the exam.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-8">Allocate time in
+                                            such a way that will help to balance preparation and able to maximize score
+                                            in every subject.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- panel2 -->
+
+            </div> <!-- container -->
+        </div> <!-- admission guidance -->
+        <div class="container mt-6 custom-container">
+            <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Admission Guidance</h2>
+            <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"></p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card card-info wow zoomInUp animation-delay-5">
+                        <div class="bg-info">
+                            <img src="/images/home/e_services/bipc.jpg" alt="..." class="img-avatar-circle">
+                        </div>
+                        <div class="card-body pt-4 text-center">
+                            <h4 class="color-info">NEET UG</h4>
+                            <p>Keep track of all NEET based counsellings like AIQ/ Deemed/ AIPVT/ AYUSH /All State
+                                Convenor Quota &amp; Management Quota.</p>
+                            <a href="neet.php" class="btn btn-info"><i class="zmdi zmdi-star"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-danger wow zoomInUp animation-delay-6">
+                        <div class="bg-danger">
+                            <img src="/images/home/e_services/mpc.jpg" alt="..." class="img-avatar-circle">
+                        </div>
+                        <div class="card-body pt-4 text-center">
+                            <h4 class="color-danger">JEE MAINS / JEE ADVANCED</h4>
+                            <p>keep track of all MPC Counsellings like JOSAA, State Level, VIT, BITSAT, MANIPAL, AMRITA,
+                                IIIT HYD, IISc, IISER ... etc.</p>
+                            <a href="jeemains.php" class="btn btn-danger"><i class="zmdi zmdi-star"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-warning wow zoomInUp animation-delay-7">
+                        <div class="bg-warning">
+                            <img src="/images/home/e_services/neetpg.jpg" alt="..." class="img-avatar-circle">
+                        </div>
+                        <div class="card-body pt-4 text-center">
+                            <h4 class="color-warning">NEET PG</h4>
+                            <p>Applying for NEET PG/MDS examinations and Counsellings like AIQ, Deemed, State
+                                Counsellings, Convenor Quota and Management Quota</p>
+                            <a href="javascript:void(0)" class="btn btn-warning"><i class="zmdi zmdi-star"></i>
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-success wow zoomInUp animation-delay-8">
+                        <div class="bg-success">
+                            <img src="/images/home/e_services/ugc.jpg" alt="..." class="img-avatar-circle">
+                        </div>
+                        <div class="card-body pt-4 text-center">
+                            <h4 class="color-success">Deemed Universities</h4>
+                            <p>Assist you the admission process in the best universities in India or Abroad.</p>
+                            <a href="javascript:void(0)" class="btn btn-success"><i class="zmdi zmdi-star"></i>
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Our Features -->
+        <div class="wrap bg-info mt-6">
+            <div class="text-center color-white mb-6 wow fadeInDown animation-delay-4">
+                <h1>Guidance Features</h1>
+            </div>
+            <div class="container bg-light color-dark">
+                <h3 class="color-info right-line pt-2 pb-2 wow fadeInDown animation-delay-4">Before Exam </h3>
+                <div class="panel panel-light panel-flat">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-4"
+                        role="tablist">
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_notifications" aria-controls="feature_notifications" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple active"><i class="fa fa-leanpub"></i>
+                                <span class="d-none d-md-inline">Exam Notifications</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a
+                                href="#feature_course-finder" aria-controls="rc" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-desktop"></i> <span
+                                    class="d-none d-md-inline">Course Finder</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a
+                                href="#feature_applying" aria-controls="feature_applying" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple"><i class="fa fa-question"></i> <span
+                                    class="d-none d-md-inline">Applying</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_career-guidance" aria-controls="feature_career-guidance" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-certificate"></i> <span
+                                    class="d-none d-md-inline">Tailor Made Career Guidance</span></a></li>
+                                <span id="i1" class="ms-tabs-indicator" style="left: 0px;width: 25%;"></span>
+                    </ul>
+                    <div class="panel-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content mt-4">
+                            <div role="tabpanel" class="tab-pane active show fade" id="feature_notifications">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="/images/home/notifications.jpg" alt=""
+                                            class="img-fluid wow animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal wow animated fadeInUp animation-delay-4">Exam
+                                            Notifications</h3>
+                                        <p class="lead lead-md wow animated fadeInUp animation-delay-6">Be updated on
+                                            latest information in corresponding examinations. Get each and every Updated
+                                            information about the Examinations you want.</p>
+                                        <p class="lead lead-md wow animated fadeInUp animation-delay-7">Get
+                                            notifications through Mobile or Email.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_course-finder">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/course-finder.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Course Finder</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Be knowing about all
+                                            the options available for you,</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">after MPC, BiPC,
+                                            MBBS, BTech, BDS, BSc</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_applying">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/demo/doubtsclarify.png" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Applying</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">Helps you in the
+                                            application process of State level and National Exams/ Counsellings.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7"></p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_career-guidance">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/career-guidance.jpg" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Tailor Made Career
+                                            Guidance</h3>
+                                        <p class="lead lead-md  animated fadeInUp animation-delay-6">Find the
+                                            information about career planning and development at MyRank.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">Engineering,
+                                            Medical, Architecture, Dental, Veterinary, AYUSH, Designing, Pharma,
+                                            Paramedical, Research...</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- panel1 -->
+                <h3 class="color-info right-line pt-2 pb-2 wow fadeInDown animation-delay-4">After Exam </h3>
+                <div class="panel panel-light panel-flat">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-4"
+                        role="tablist">
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_counselling-notifications"
+                                aria-controls="feature_counselling-notifications" role="tab" data-toggle="tab"
+                                class="nav-link withoutripple active"><i class="fa fa-file-text-o"></i> <span
+                                    class="d-none d-md-inline">Counselling Notifications</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a
+                                href="#feature_seatmatrix" aria-controls="feature_seatmatrix" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-newspaper-o"></i> <span
+                                    class="d-none d-md-inline">Cutoffs, Seat Matrix &amp; Feeses</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a
+                                href="#feature_a-cat-assistance" aria-controls="feature_a-cat-assistance" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-database"></i> <span
+                                    class="d-none d-md-inline">Convenor Quota/ A Cat Assistance</span></a></li>
+                        <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a
+                                href="#feature_b-cat-assistance" aria-controls="feature_b-cat-assistance" role="tab"
+                                data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-compass"></i> <span
+                                    class="d-none d-md-inline">Management/ Payment Seat Assistance</span></a></li>
+                                    <span id="i1" class="ms-tabs-indicator" style="left: 0px;width: 25%;"></span>
+                    </ul>
+                    <div class="panel-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content mt-4">
+                            <div role="tabpanel" class="tab-pane active show fade"
+                                id="feature_counselling-notifications">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="/images/home/notifications.jpg" alt=""
+                                            class="img-fluid wow animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal wow animated fadeInUp animation-delay-4">Counselling
+                                            Notifications</h3>
+                                        <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Be updated on
+                                            latest information in corresponding examinations. Get each and every Updated
+                                            information about the Examinations you want.</p>
+                                        <p class="lead lead-md wow animated fadeInUp animation-delay-7">Get
+                                            notifications through Mobile or Email.</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_seatmatrix">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/demo/cutoffs.jpg" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6 order-lg-1">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Cutoffs, Seat Matrix
+                                            &amp; Feeses</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">We provide the
+                                            latest Seat Matrix and Previous years cutoff marks</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">--</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_a-cat-assistance">
+                                <div class="row">
+                                    <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/img/demo/govt-mgmt-education.jpg" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Convenor Quota/ A
+                                            Cat Assistance</h3>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-6">We will assist you
+                                            in the Web Options / Counselling process.</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7">--</p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="feature_b-cat-assistance">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="assets/img/demo/govt-mgmt-education.jpg" alt=""
+                                            class="img-fluid animated zoomIn animation-delay-8">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h3 class="text-normal animated fadeInUp animation-delay-4">Management/ Payment
+                                            Seat Assistance</h3>
+                                        <p class="lead lead-md  animated fadeInUp animation-delay-6">We also provide you
+                                            the Management Quota services with in your Budget</p>
+                                        <p class="lead lead-md animated fadeInUp animation-delay-7"></p>
+                                        <div class="">
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i
+                                                    class="zmdi zmdi-info"></i> More info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- panel2 -->
+            </div> <!-- container -->
+        </div> 
+        
+                <!-- Numerical Data Section -->
+                <section class="wrap bg-primary color-dark mt-6">
+                    <div class="container">
+                        <h1 class="color-white text-center mb-4" style="color: white;">Analytics</h1>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card card-royal card-body overflow-hidden text-center">
+                                    <h2 class="counter">36402</h2>
+                                    <i class="fa fa-4x fa-id-badge color-royal"></i>
+                                    <p class="mt-2 no-mb lead small-caps">Students Enrolled</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card card-success card-body overflow-hidden text-center">
+                                    <h2 class="counter">91389</h2>
+                                    <i class="fa fa-4x fa-question-circle-o color-success"></i>
+                                    <p class="mt-2 no-mb lead small-caps">Queries Resolved</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card card-danger card-body overflow-hidden text-center">
+                                    <h2 class="counter">100568</h2>
+                                    <i class="fa fa-4x fa-bars color-danger"></i>
+                                    <p class="mt-2 no-mb lead small-caps">Tests Taken</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card card-info card-body overflow-hidden text-center">
+                                    <h2 class="counter">703254</h2>
+                                    <i class="fa fa-4x fa-list-alt color-info"></i>
+                                    <p class="mt-2 no-mb lead small-caps">Questions Attempted</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center color-white mw-800 center-block mt-4">
+                            <p class="lead lead-lg color-white" style="color: white;">Looking Forward to crack many more Milestones.</p>
+                        </div>
+                    </div>
+                </section>
+        
+        
+        <!-- Testimonials -->
+        <div class="wrap bg-danger mt-6">
+            <h2 class="text-center no-m wow fadeInDown animation-delay-4">What our customers say</h2>
+            <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel"
+                data-interval="7000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-2 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="/images/home/e_services/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>It is a very interactive course and moreover the promoters are so
+                                                    responsive they always think on behalf of the students and promote
+                                                    various possibilities that can help in improving them in their
+                                                    academics.</p>
+                                                <footer>Surampudi.</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-3 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="/images/home/e_services/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>Well.....its the best educational website i have ever visited..and
+                                                    has really helped me in my academic progress. so i have referred
+                                                    this site for more than 15 people. Last but not the least, thanks
+                                                    for the people who have created this site..</p>
+                                                <footer>Srikar</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-2 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>It is a very useful program for the IIT aiming students, I seriously
+                                                    feel once the test papers given by MyRank are solved, the students
+                                                    can assess themselves, buildup confidence levels..</p>
+                                                <footer>Lalitha Ahlada</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-3 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>Good for preparation and analysis, because it has good explanation
+                                                    and score predicator for each and every exam and quick analysis
+                                                    etc.,. Very useful for all Exams / Counselling Guidance. </p>
+                                                <footer>Harsha</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-2 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>MyRank is like very useful because I am able to solve all questions
+                                                    and clear my doubts through query zone.</p>
+                                                <footer>Nirupambolisetty</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-3 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>Its very useful to a student. It is all time teacher even at 12’o
+                                                    clock in the night.</p>
+                                                <footer>Nimisha Sweety</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-4 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>I am very much comfortable with myrank website. It helps me to
+                                                    understand the concept of each and every point clearly. Practicing 2
+                                                    papers per day is more than enough to crack good ranks in
+                                                    engineering examinations and other competitive exams.</p>
+                                                <footer>Adithya</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card animated flipInX animation-delay-4 mb-4">
+                                            <blockquote class="blockquote blockquote-avatar withripple">
+                                                <img src="assets/img/demo/avatar.png" alt=""
+                                                    class="avatar d-none d-sm-block">
+                                                <p>I can improve my skills with it and I am very thankful to it for
+                                                    helping me in my studies. They are very economical compared to the
+                                                    market and believe me these are the people who are going to rock in
+                                                    the world of educational services in the future.. Thank You MyRank.
+                                                </p>
+                                                <footer>Karuna</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control-prev btn btn-white btn-raised" href="#carousel-example-generic"
+                    role="button" data-slide="next">
+                    <i class="zmdi zmdi-arrow-left"></i>
+                </a>
+                <a class="right carousel-control-next btn btn-white btn-raised" href="#carousel-example-generic"
+                    role="button" data-slide="next">
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </a>
+            </div>
+        </div> 
+        
+        <!-- Main Footbar -->
+        <aside class="ms-footbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 ms-footer-col">
+                        <div class="ms-footbar-block">
+                            <h3 class="ms-footbar-title">MyRank</h3>
+                            <ul class="list-unstyled ms-icon-list two_cols three_cols">
+                                <li><a href="index.php"><i class="zmdi zmdi-home"></i> Home</a></li>
+                                <li><a href="https://blog.myrank.co.in/"><i class="fa fa-newspaper-o"></i> Blog</a></li>
+                                <li><a href="https://myrank.co.in/notifications/"><i class="fa fa-list"></i>
+                                        Notifications</a></li>
+                                <li><a href="halloffame.php"><i class="fa fa-file-image-o"></i> Hall of Fame</a></li>
+                                <li><a href="packages.php"><i class="zmdi zmdi-money"></i> Pricing</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-street-view"></i> About Us</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-question"></i> AYQ</a></li>
+                                <li><a href="login.php"><i class="fa fa-sign-in"></i> Login</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                                <li><a href="Terms_Conditions.php"><i class="fa fa-legal"></i> Terms & Conditions</a>
+                                </li>
+                                <li><a href="privacy_policy.php"><i class="fa fa-lock"></i> Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
+                        <div class="ms-footbar-block">
+                            <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
+                            <div class="ms-footer-media">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="javascript:void(0)">
+                                            <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                                alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="javascript:void(0)">Physics - Kinematics -
+                                                Units and Dimensions Video Classes Uploaded</a></h4>
+                                        <div class="media-footer">
+                                            <span><i class="zmdi zmdi-time color-info-light"></i> January 30,
+                                                2021</span>
+                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                                    href="javascript:void(0)">Study</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="javascript:void(0)">
+                                            <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                                alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="javascript:void(0)">Mathematics - Matrices -
+                                                Video Classes Uploaded</a></h4>
+                                        <div class="media-footer">
+                                            <span><i class="zmdi zmdi-time color-info-light"></i> January 28,
+                                                2021</span>
+                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                                    href="javascript:void(0)">Study</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="javascript:void(0)">
+                                            <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                                alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="javascript:void(0)">NEET Sakshi Mock Test
+                                                2020 Paper Uploaded</a></h4>
+                                        <div class="media-footer">
+                                            <span><i class="zmdi zmdi-time color-info-light"></i> December 22,
+                                                2020</span>
+                                            <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                                    href="javascript:void(0)">Mock Tests</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
+                        <div class="ms-footbar-block">
+                            <div class="ms-footbar-title">
+                                <h4 class="no-m ms-site-title"><span>MyRank</span> Education PVT. LTD.</h4>
+                            </div>
+                            <address class="no-mb">
+                                <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> 3rd Floor, Chaitanya Chambers,
+                                    Beside HP Petrol Pump,</p>
+                                <p>Chaitanya Puri, Dilsukhnagar,</p>
+                                <p>Hyderabad, Telangana - 500060.</p>
+                                <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a
+                                        href="mailto:info@myrank.co.in">info@myrank.co.in</a></p>
+                                <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>040-49521580 </p>
+                            </address>
+                        </div>
+                        <div class="ms-footbar-block">
+                            <h3 class="ms-footbar-title">Social Media</h3>
+                            <div class="ms-footbar-social">
+                                <a href="https://www.facebook.com/MyRankeducation/" class="btn-circle btn-facebook"
+                                    target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="https://twitter.com/MyRankEducation" class="btn-circle btn-twitter"
+                                    target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="https://www.youtube.com/channel/UCwpu27LNgKsjxnTEzIflhlQ"
+                                    class="btn-circle btn-youtube" target="_blank"><i
+                                        class="zmdi zmdi-youtube-play"></i></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/57e73345bb785b3a47ca55df/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script> <!-- Footer -->
+        <footer class="ms-footer">
+            <div class="container">
+                <p class=""  style="color: #bdbdbd;">Copyright &copy; MyRank Education PVT. LTD. 2013-2021</p>
+            </div>
+        </footer> 
+        <!-- Back to top -->
+        <!-- <div class="btn-back-top">
+            <a href="#" data-scroll id="back-top"
+                class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i
+                    class="zmdi zmdi-long-arrow-up"></i></a>
+        </div> -->
+    </div> <!-- ms-site-container -->
+    <!-- Side Bar -->
+    <!-- <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+        <div class="sb-slidebar-container">
+            <header class="ms-slidebar-header">
+                <div class="ms-slidebar-login">
+                    <a href="login.php" class="withripple"><i class="zmdi zmdi-account"></i>Login</a>
+                    <a href="packages.php" class="withripple"><i class="zmdi zmdi-account-add"></i>Register</a>
+                </div>
+                <div class="ms-slidebar-title">
+                    <div class="ms-slidebar-t">
+                        <span class="ms-logo ms-logo-sm"><i class="zmdi zmdi-phone"></i></span>
+                        <h3><span>040 49521580 / 81 / 82</span></h3>
+                    </div>
+                </div>
+            </header>
+            <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+                <li>
+                    <a class="link" href="index1.php"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a class="link" href="aboutus.php"><i class="fa fa-street-view"></i>About Us</a>
+                </li>
+                <li class="card" role="tab" id="sch6">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#sc6" aria-expanded="false"
+                        aria-controls="sc6">
+                        <i class="fa fa-hand-o-right"></i>Guidance </a>
+                    <ul id="sc6" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch6"
+                        data-parent="#slidebar-menu">
+                        <li class="text-center"><label class="font-weight-bold">MPC</label></li>
+                        <li><a href="jeemains.php">JEE MAINS</a></li>
+                        <li><a href="jeeadvanced.php">JEE ADVANCED</a></li>
+                        <li><a href="bitsat.php">BITSAT</a></li>
+                        <li><a href="tseamcet.php">TS EAMCET</a></li>
+                        <li><a href="apeamcet.php">AP EAPCET</a></li>
+                        <li><a href="kcet.php">KCET</a></li>
+                        <li><a href="iiithyd.php">IIIT HYD</a></li>
+                        <li><a href="iisc.php">IISc</a></li>
+                        <li><a href="iiser.php">IISER</a></li>
+                        <li><a href="nest.php">NEST</a></li>
+                        <li><a href="coming_soon.php">Deemed Universities</a></li>
+                        <li class="text-center"><label class="font-weight-bold">BiPC</label></li>
+                        <li><a href="neet.php">NEET</a></li>
+                        <li><a href="aiims.php">AIIMS</a></li>
+                        <li><a href="jipmer.php">JIPMER</a></li>
+                        <li><a href="tseamcet.php">TS EAMCET</a></li>
+                        <li><a href="apeamcet.php">AP EAPCET</a></li>
+                        <li><a href="kcet.php">KCET</a></li>
+                        <li><a href="icar.php">ICAR</a></li>
+                        <li><a href="iiser.php">IISER</a></li>
+                        <li><a href="aipvt.php">AIPVT</a></li>
+                        <li><a href="tnau.php">TNAU</a></li>
+                        <li><a href="coming_soon.php">Deemed Universities</a></li>
+                        <li class="text-center"><label class="font-weight-bold">NEET PG</label></li>
+                        <li><a href="coming_soon.php">AIQ/Deemed</a></li>
+                        <li><a href="coming_soon.php">TS Convenor Quota</a></li>
+                        <li><a href="coming_soon.php">AP Convenor Quota</a></li>
+                        <li><a href="coming_soon.php">TS MGMT Quota</a></li>
+                        <li><a href="coming_soon.php">AP MGMT Quota</a></li>
+                        <li><a href="coming_soon.php">Karnataka Counselling</a></li>
+                        <li><a href="coming_soon.php">Other State COunselling</a></li>
+                        <li class="text-center"><label class="font-weight-bold">NEET MDS</label></li>
+                        <li><a href="coming_soon.php">AIQ/Deemed</a></li>
+                        <li><a href="coming_soon.php">AP & TS Counsellings</a></li>
+                        <li><a href="coming_soon.php">Karnataka Counselling</a></li>
+                        <li><a href="coming_soon.php">Other State Counsellings</a></li>
+                        <li class="text-center"><label class="font-weight-bold">Other UG Guidance</label></li>
+                        <li><a href="nift.php">NIFT</a></li>
+                        <li><a href="uceed.php">UCEED</a></li>
+                        <li><a href="clat.php">CLAT</a></li>
+                        <li><a href="nata.php">NATA</a></li>
+                        <li><a href="isi.php">ISI</a></li>
+                        <li class="text-center"><label class="font-weight-bold">Others</label></li>
+                        <li><a href="usmle.php">USMLE</a></li>
+                        <li><a href="ntse.php">NTSE</a></li>
+                        <li><a href="coming_soon.php">MSc Agriculture</a></li>
+                        <li><a href="coming_soon.php">GRE</a></li>
+                        <li><a href="coming_soon.php">GATE</a></li>
+                </li>
+            </ul>
+            <li>
+                <a class="link" href="liveclasses.php"><i class="fa fa-television"></i>Live Classes</a>
+            </li>
+            <li>
+                <a class="link" href="mbbsclasses.php"><i class="fa fa-television"></i>MBBS Classes</a>
+            </li>
+            <li>
+                <a class="link" href="packages.php"><i class="fa fa-empire fa-custom"></i>Packages</a>
+            </li>
+            <li>
+                <a class="link" href="contactus.php"><i class="fa fa-phone"></i>Contact Us</a>
+            </li>
+            <li>
+                <a class="link" href="https://myrank.co.in/notifications/"><i class="fa fa-list"></i>Notifications</a>
+            </li>
+            </ul>
+        </div>
+    </div> -->
+</body>
+
+</html>

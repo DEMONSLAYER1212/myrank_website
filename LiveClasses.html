@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="theme-color" content="#333" />
+  <title>MyRank - Online Education Portal</title>
+  <meta
+    name="description"
+    content="MyRank is an online self assessment portal which gives support to students for preparing state & national level entrance examinations like IITJEE, BITSAT, EAMCET, KEAM, and AIIMS."
+  />
+  <meta
+    name="keywords"
+    content="MyRank,Online Education,Mock Test, India,Unlimited Practice Test,Live Classes,IPE Question Bank,Ask your Queries,clarifications,intermediate,Jee Mains,Jee Advanced,BITSAT,EAMCET,AIIMS,JIPMER,NEET,K CET,KEAM "
+  />
+  <meta name="author" content="Bhanu Satapati" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <link rel="stylesheet" href="assets/css/purple.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico?v=3" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/homepage.css">
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+
+  <style>
+    h4{
+      pointer-events: none;
+    }
+    h4{
+      font-size: 18px;
+    }
+    body{
+      font-family: "Roboto", sans-serif;
+        font-size: 0.9rem;
+    }
+    @media (min-width: 992px) {
+      .custom-container {
+        max-width: 65%;
+        margin: 0 auto;
+      }
+    }
+    .btn,h3,h1,p{
+      pointer-events: none;
+    }
+    
+    h1{
+      font-family: "Roboto";
+      font-size: 35px;
+      font-weight: 300;
+
+    }
+    h3{
+      font-family: "Roboto";
+      font-size: 25px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="ms-header ms-header-white">
+    <!--ms-header-white-->
+    <div class="container container-full">
+        <div class="ms-title">
+            <a href="index.php">
+                <img src="/images/myrank_svg-logo.svg" width="200vw">
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="login.php"
+                class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8 font-weight-bold mr-1"
+                style="font-family: Cambria, Georgia, serif;">Login</a>
+            <a href="packages.php"
+                class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8 font-weight-bold"
+                style="font-family: Cambria, Georgia, serif;">Register</a>
+            <a href="javascript:void(0)" class="no-focus animated zoomInDown animation-delay-9 ml-2"
+                style="font-family: Cambria, Georgia, serif;"><i class="zmdi zmdi-phone"></i> 040-49521580 / 81
+                / 82 <span class="no-sm-diplay">(9.30 AM TO 5.30 PM)</span> </a> <!-- <form class="search-form animated zoomInDown animation-delay-9">
+      <input id="search-box" type="text" class="search-input" value="040-49521580" name="q" readonly/>
+      <label for="search-box"><i class="zmdi zmdi-phone"></i></label>
+    </form> -->
+            <a href="javascript:void(0)"
+                class="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10"><i
+                    class="zmdi zmdi-menu"></i></a>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-white mb-0">
+  <div class="container container-full tab-pml-0">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">
+              <img src="myrank_svg-logo.svg" width="150vw">
+          </a>
+      </div>
+      <div class="collapse navbar-collapse" id="ms-navbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="/index.html" class="nav-link animated fadeIn animation-delay-9 nav-link-pl"
+                      role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home ml-0"
+                          aria-hidden="true"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown dropdown-megamenu-container">
+                  <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-9 nav-link-pl"
+                      data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false" data-name="component"><i class="fa fa-hand-o-right ml-0"
+                          aria-hidden="true"></i> Guidance <i class="zmdi zmdi-chevron-down"></i></a>
+                  <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
+                      <li class="container">
+                          <div class="row">
+                              <div class="col-sm-3 megamenu-col">
+                                  <div class="megamenu-block animated fadeInLeft animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="fa fa-microchip"></i> MPC</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="jeemains.php"><i
+                                                      class="fa fa-flag-o"></i> JEE MAINS</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="jeeadvanced.php"><i
+                                                      class="fa fa-flag"></i> JEE ADVANCED</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="bitsat.php"><i
+                                                      class="fa fa-building-o"></i> BITSAT</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="tseamcet.php"><i
+                                                      class="fa fa-building-o"></i> TS EAMCET</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="apeamcet.php"><i
+                                                      class="fa fa-building-o"></i> AP EAPCET</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="kcet.php">
+                                                  <i class="fa fa-building-o"></i> KCET
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="iiithyd.php"><i
+                                                      class="fa fa-building-o"></i> IIIT HYDERABAD</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="iisc.php"><i class="fa fa-tags"></i>
+                                                  IISc</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="iiser.php"><i
+                                                      class="fa fa-tags"></i> IISER</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="nest.php"><i class="fa fa-tags"></i>
+                                                  NEST</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php"><i
+                                                      class="fa fa-building-o"></i> Deemed Universities</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-sm-3 megamenu-col">
+                                  <div class="megamenu-block animated fadeInLeft animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="fa fa-plus-square"></i> BiPC/PCB</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="neet.php">
+                                                  <i class="fa fa-user-md"></i> NEET</a>
+                                          </li>
+
+                                          <li>
+                                              <a class="withripple" href="aiims.php">
+                                                  <i class="fa fa-medkit"></i> AIIMS</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="jipmer.php">
+                                                  <i class="fa fa-leaf"></i> JIPMER</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="tseamcet.php">
+                                                  <i class="fa fa-leaf"></i> TS EAMCET</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="apeamcet.php">
+                                                  <i class="fa fa-leaf"></i> AP EAPCET</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="kcet.php">
+                                                  <i class="fa fa-leaf"></i> KCET</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="icar.php">
+                                                  <i class="fa fa-leaf"></i> ICAR</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="iiser.php">
+                                                  <i class="fa fa-tags"></i> IISER</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="aipvt.php">
+                                                  <i class="fa fa-stethoscope"></i> AIPVT</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="tnau.php">
+                                                  <i class="fa fa-leaf"></i> TNAU</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-leaf"></i> Deemed Universities</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-sm-3 megamenu-col">
+                                  <div class="megamenu-block animated fadeInRight animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="fa fa-user-md"></i> NEET PG</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> AIQ/Deemed</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> TS Convenor Quota</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> AP Convenor Quota</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> TS MGMT Quota</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> AP MGMT Quota</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> Karnataka Counselling</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-user-md"></i> Other States Counsellings</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="megamenu-block animated fadeInRight animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="zmdi zmdi-tab"></i> NEET MDS</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-h-square"></i> AIQ/Deemed</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-h-square"></i> AP & TS Counsellings</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-h-square"></i> Karnataka Counselling</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-sm-3 megamenu-col">
+                                  <div class="megamenu-block animated fadeInRight animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="fa fa-info-circle"></i> Other UG Guidance</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="nift.php">
+                                                  <i class="fa fa-female"></i> NIFT</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="uceed.php">
+                                                  <i class="fa fa-female"></i> UCEED</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="clat.php">
+                                                  <i class="fa fa fa-legal"></i> CLAT</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="nata.php">
+                                                  <i class="fa fa-building-o"></i> NATA</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="isi.php">
+                                                  <i class="fa fa-pie-chart"></i> ISI</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="megamenu-block animated fadeInRight animated-2x">
+                                      <h3 class="megamenu-block-title font-weight-bold"><i
+                                              class="fa fa-info-circle"></i> Others</h3>
+                                      <ul class="megamenu-block-list">
+                                          <li>
+                                              <a class="withripple" href="usmle.php">
+                                                  <i class="fa fa-user-md"></i> USMLE</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="ntse.php">
+                                                  <i class="zmdi fa-graduation-cap"></i> NTSE</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-leaf"></i> MSc Agriculture</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-graduation-cap"></i> GATE</a>
+                                          </li>
+                                          <li>
+                                              <a class="withripple" href="coming_soon.php">
+                                                  <i class="fa fa-plane"></i> GRE</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a href="/LiveClasses.html"
+                      class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                      role="button" aria-haspopup="true" aria-expanded="false"><i
+                          class="fa fa-television ml-0" aria-hidden="true"></i> Live Classes</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/Mbbs.html"
+                      class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                      role="button" aria-haspopup="true" aria-expanded="false"><i
+                          class="fa fa-television ml-0" aria-hidden="true"></i> MBBS Classes</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/Packages.html" class="nav-link animated fadeIn animation-delay-9 nav-link-pl"
+                      role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-empire ml-0"
+                          aria-hidden="true"></i> Packages</a>
+              </li>
+              <li class="nav-item">
+                  <a href="ContactUs.html"
+                      class="nav-link animated fadeIn animation-delay-9 custom-nowrap nav-link-pl"
+                      role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-phone ml-0"
+                          aria-hidden="true"></i> Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a href="https://myrank.co.in/notifications/"
+                      class="nav-link animated fadeIn animation-delay-9 nav-link-pl" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fa fa-list ml-0"
+                          aria-hidden="true"></i> Notifications</a>
+              </li>
+          </ul>
+      </div>
+  </div> <!-- container -->
+</nav>
+  <header class="ms-hero-page ms-hero-bg-dark-light ms-hero-img-city2 ms-bg-fixed pt-1 mt-1">
+    <div class="container custom-container">
+      <div class="text-center">
+        <h1 class="color-info mt-4 font">
+          are you?
+        </h1>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-6 mb-5">
+          <div class="ms-icon-feature d-flex align-items-center">
+            <div class="ms-icon-feature-icon mr-3">
+              <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white">
+                <i class="fa fa-question-circle-o"></i>
+              </span>
+            </div>
+            <div class="ms-icon-feature-content color-white">
+              <h4 class="color-info mb-4">
+                Attending classes with 200+ students
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="ms-icon-feature d-flex align-items-center">
+            <div class="ms-icon-feature-icon mr-3">
+              <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white">
+                <i class="fa fa-question-circle-o"></i>
+              </span>
+            </div>
+            <div class="ms-icon-feature-content color-white">
+              <h4 class="color-info mb-4">
+                Paying higher college fees above 2 Lakhs+
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="ms-icon-feature d-flex align-items-center">
+            <div class="ms-icon-feature-icon mr-3">
+              <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white">
+                <i class="fa fa-question-circle-o"></i>
+              </span>
+            </div>
+            <div class="ms-icon-feature-content color-white">
+              <h4 class="color-info mb-4">
+                Able to clarify your doubts during live sessions
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="ms-icon-feature d-flex align-items-center">
+            <div class="ms-icon-feature-icon mr-3">
+              <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white">
+                <i class="fa fa-question-circle-o"></i>
+              </span>
+            </div>
+            <div class="ms-icon-feature-content color-white">
+              <h4 class="color-info mb-4">
+                Facing the problem with faculty who are not experienced for
+                online classes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p
+          class="lead lead-xl mw-800 center-block color-medium mb-2"
+        >
+          Don't worry, MyRank <span class="colorStar">LIVE CLASSES </span>
+          <span class="colorStar animation-delay-10"
+            >will address all your problems</span
+          >.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Advantages -->
+  <div class="wrap bg-info pt-2 pb-2">
+    <div
+      class="text-center d-flex justify-content-center color-white mb-5 p-2"
+    >
+      <h1 class="mb-2">MyRank Live Classes - Advantages</h1>
+    </div>
+    <div class="ms-hero-page ms-hero-img-keyboard ms-hero-bg-dark color-white">
+      <div class="container index-1 custom-container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="ms-list-arrow">
+              <li class="">
+                Live online "INTERACTIVE" classes.
+              </li>
+              <li class="">
+                Highly qualified online "TEACHING EXPERTS".
+              </li>
+              <li class="">
+                Clarify your doubts "THEN & THEIR".
+              </li>
+              <li class="">
+                Focus on "HIGH WEIGHTAGE TOPICS (HWT)"
+              </li>
+              <li class="">
+                Chance for "ONE ON ONE" interaction.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul class="ms-list-arrow">
+              <li class="">
+                Classes are done by "IITians, PhD" & senior faculties.
+              </li>
+              <li class="">
+                "DAILY & WEEKLY" track of your performance.
+              </li>
+              <li class="">
+                Clarify "UNLIMITED DOUBTS" in the live sessions.
+              </li>
+              <li class="">
+                "Practice Practice Practice" 100% to get a top rank.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+                    <div class="col-lg-12 text-center">
+            <a  class="btn btn-primary btn-xlg btn-raised">
+              <i class="zmdi zmdi-settings"></i> GRAB THIS PACK
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Advantages -->
+
+  <!-- Sample Lectures Section -->
+  <section id="services" class="mt-5">
+    <div class="wrap ms-hero-img-meeting ms-hero-bg-info color-white ms-bg-fixed">
+      <div class="container index-1 custom-container g-5">
+        <div class="text-center mb-4">
+          <h1 class="mb-5">Sample Lectures</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 ">
+              <h3 class="pb-3">Physics:- 11th & 12th Class Level</h3>
+              <div >
+                  <iframe style="height:250px;width:100%" class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/RzWSCVn24uQ"></iframe>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <h3 class="pb-3">Chemistry:- 11th & 12th Class Level</h3>
+              <div >
+                  <iframe class="" style="height:250px;width:100%"  allowfullscreen src="https://www.youtube.com/embed/_f8FWyGpsW4"></iframe>
+              </div>
+          </div>
+      </div>
+        <hr>
+        <div class="text-center">
+          <a href="" class="button-pack">
+            <i class="zmdi zmdi-info"></i> Get This Pack
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <aside class="ms-footbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 ms-footer-col">
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title">MyRank</h3>
+                    <ul class="list-unstyled ms-icon-list two_cols three_cols">
+                        <li><a href="index.php"><i class="zmdi zmdi-home"></i> Home</a></li>
+                        <li><a href="https://blog.myrank.co.in/"><i class="fa fa-newspaper-o"></i> Blog</a></li>
+                        <li><a href="https://myrank.co.in/notifications/"><i class="fa fa-list"></i>
+                                Notifications</a></li>
+                        <li><a href="halloffame.php"><i class="fa fa-file-image-o"></i> Hall of Fame</a></li>
+                        <li><a href="packages.php"><i class="zmdi zmdi-money"></i> Pricing</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-street-view"></i> About Us</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-question"></i> AYQ</a></li>
+                        <li><a href="login.php"><i class="fa fa-sign-in"></i> Login</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="Terms_Conditions.php"><i class="fa fa-legal"></i> Terms & Conditions</a>
+                        </li>
+                        <li><a href="privacy_policy.php"><i class="fa fa-lock"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
+                    <div class="ms-footer-media">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="javascript:void(0)">
+                                    <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="javascript:void(0)">Physics - Kinematics -
+                                        Units and Dimensions Video Classes Uploaded</a></h4>
+                                <div class="media-footer">
+                                    <span><i class="zmdi zmdi-time color-info-light"></i> January 30,
+                                        2021</span>
+                                    <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                            href="javascript:void(0)">Study</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="javascript:void(0)">
+                                    <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="javascript:void(0)">Mathematics - Matrices -
+                                        Video Classes Uploaded</a></h4>
+                                <div class="media-footer">
+                                    <span><i class="zmdi zmdi-time color-info-light"></i> January 28,
+                                        2021</span>
+                                    <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                            href="javascript:void(0)">Study</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="javascript:void(0)">
+                                    <img class="media-object media-object-circle" src="/images/home/p75.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="javascript:void(0)">NEET Sakshi Mock Test
+                                        2020 Paper Uploaded</a></h4>
+                                <div class="media-footer">
+                                    <span><i class="zmdi zmdi-time color-info-light"></i> December 22,
+                                        2020</span>
+                                    <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a
+                                            href="javascript:void(0)">Mock Tests</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
+                <div class="ms-footbar-block">
+                    <div class="ms-footbar-title">
+                        <h4 class="no-m ms-site-title"><span>MyRank</span> Education PVT. LTD.</h4>
+                    </div>
+                    <address class="no-mb">
+                        <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> 3rd Floor, Chaitanya Chambers,
+                            Beside HP Petrol Pump,</p>
+                        <p>Chaitanya Puri, Dilsukhnagar,</p>
+                        <p>Hyderabad, Telangana - 500060.</p>
+                        <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a
+                                href="mailto:info@myrank.co.in">info@myrank.co.in</a></p>
+                        <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>040-49521580 </p>
+                    </address>
+                </div>
+                <div class="ms-footbar-block">
+                    <h3 class="ms-footbar-title">Social Media</h3>
+                    <div class="ms-footbar-social">
+                        <a href="https://www.facebook.com/MyRankeducation/" class="btn-circle btn-facebook"
+                            target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="https://twitter.com/MyRankEducation" class="btn-circle btn-twitter"
+                            target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCwpu27LNgKsjxnTEzIflhlQ"
+                            class="btn-circle btn-youtube" target="_blank"><i
+                                class="zmdi zmdi-youtube-play"></i></a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/57e73345bb785b3a47ca55df/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script> <!-- Footer -->
+<footer class="ms-footer">
+    <div class="container">
+        <p class=""  style="color: #bdbdbd;">Copyright &copy; MyRank Education PVT. LTD. 2013-2021</p>
+    </div>
+</footer> 
+</body>
+</html>
+
+         
